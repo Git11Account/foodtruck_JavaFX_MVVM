@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.TopMenuController"
+      spacing="10" style="-fx-background-color: #333; -fx-padding: 10;">
+
+    <Label text="FoodTruck Manager" style="-fx-text-fill: white; -fx-font-size: 16;" />
+
+    <Pane HBox.hgrow="ALWAYS"/>
+
+    <Button text="Déconnexion" fx:id="btnLogout"/>
+</HBox>

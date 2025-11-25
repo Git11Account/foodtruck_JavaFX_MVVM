@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.OwnerDisponibilitesController"
+      spacing="8" padding="10">
+
+    <Label text="Gérer les disponibilités" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+
+    <ListView fx:id="lvDispos" prefHeight="250"/>
+
+    <HBox spacing="8">
+        <VBox>
+            <Label text="Date début"/>
+            <DatePicker fx:id="dpStartDate"/>
+        </VBox>
+        <VBox>
+            <Label text="Heure début (HH:mm)"/>
+            <TextField fx:id="txtStartTime" promptText="09:00"/>
+        </VBox>
+        <VBox>
+            <Label text="Date fin"/>
+            <DatePicker fx:id="dpEndDate"/>
+        </VBox>
+        <VBox>
+            <Label text="Heure fin (HH:mm)"/>
+            <TextField fx:id="txtEndTime" promptText="17:00"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button fx:id="btnAdd" text="Ajouter"/>
+        <Button fx:id="btnDelete" text="Supprimer"/>
+        <Button fx:id="btnBack" text="Retour"/>
+    </HBox>
+</VBox>

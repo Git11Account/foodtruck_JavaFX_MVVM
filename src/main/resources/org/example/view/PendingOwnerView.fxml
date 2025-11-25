@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="20" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml">
+
+    <Label text="Votre foodtruck est en attente de validation par un administrateur."
+           style="-fx-font-size: 18; -fx-text-fill: #555;"/>
+
+    <Button text="Déconnexion" onAction="#logout"/>
+
+</VBox>

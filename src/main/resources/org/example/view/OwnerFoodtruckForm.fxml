@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.OwnerFoodtruckFormController"
+      spacing="8" padding="10">
+
+    <Label text="Formulaire Foodtruck" style="-fx-font-size:16px; -fx-font-weight:bold;" />
+
+    <Label text="Nom:"/>
+    <TextField fx:id="txtNom"/>
+
+    <Label text="Type de cuisine:"/>
+    <TextField fx:id="txtType"/>
+
+    <Label text="Téléphone:"/>
+    <TextField fx:id="txtPhone"/>
+
+    <Label text="Description:"/>
+    <TextArea fx:id="txtDescription" prefRowCount="4"/>
+
+    <HBox spacing="10">
+        <VBox>
+            <Label text="Latitude:"/>
+            <TextField fx:id="txtLat"/>
+        </VBox>
+        <VBox>
+            <Label text="Longitude:"/>
+            <TextField fx:id="txtLon"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button fx:id="btnSave" text="Enregistrer"/>
+        <Button fx:id="btnCancel" text="Annuler"/>
+    </HBox>
+</VBox>

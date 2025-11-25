@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox spacing="15"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.RequestOwnerController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Demande de Foodtruck" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+    <Button text="Choisir emplacement sur la carte" fx:id="chooseLocationButton"/>
+    <!-- CHAMPS CACHÉS -->
+    <TextField fx:id="latField" visible="false"/>
+    <TextField fx:id="lonField" visible="false"/>
+
+    <TextField fx:id="nomField" promptText="Nom du Foodtruck"/>
+
+    <TextArea fx:id="descField" promptText="Description" prefHeight="200"/>
+
+
+
+
+
+    <Button fx:id="sendButton" text="Envoyer ma demande" />
+</VBox>

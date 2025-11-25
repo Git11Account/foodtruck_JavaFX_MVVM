@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.OwnerDashboardController"
+      spacing="10" padding="10"
+      style="-fx-background-color: red;"
+        >
+    <Label text="TEST 123" />
+
+
+    <Label text="Espace Propriétaire" style="-fx-font-size:18px; -fx-font-weight:bold;" />
+
+    <HBox spacing="10">
+        <Button fx:id="btnNew" text="Nouveau Foodtruck"/>
+        <Button fx:id="btnEdit" text="Modifier"/>
+        <Button fx:id="btnDisponibilites" text="Gérer disponibilités"/>
+        <Button fx:id="btnBecomeOwner" text="Devenir propriétaire" />
+        <Button text="DEBUG" onAction="#debug"/>
+    </HBox>
+
+    <ListView fx:id="foodtruckList" prefHeight="400" />
+
+    <Label fx:id="lblStatus" text=" " />
+</VBox>
